@@ -1,0 +1,56 @@
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+Traceback:
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 275, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 1553, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] 系統找不到指定的檔案。
+During handling of the above exception, another exception occurred:
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\app.py", line 97, in <module>
+    t1_out = ingest_document(
+        file_bytes=raw_bytes,
+    ...<2 lines>...
+        use_opencv=use_opencv,
+    )
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\src\tier1_ingestion.py", line 339, in ingest_document
+    clean_text, page_count, prep_details = extract_via_ocr(file_bytes, suffix, use_opencv=use_opencv)
+                                           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\src\tier1_ingestion.py", line 294, in extract_via_ocr
+    t_str, m_info = _ocr_single_bgr_image(page_img, use_opencv=use_opencv, cfg=cfg)
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\src\tier1_ingestion.py", line 253, in _ocr_single_bgr_image
+    text = pytesseract.image_to_string(pil_img, lang=ocr_cfg.get("tesseract_lang", "eng"), config=tess_args)
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 352, in run_and_get_output
+    run_tesseract(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+File "C:\Users\user\Desktop\COMP4330_ResumePipeline\.venv\Lib\site-packages\pytesseract\pytesseract.py", line 280, in run_tesseract
+    raise TesseractNotFoundError()

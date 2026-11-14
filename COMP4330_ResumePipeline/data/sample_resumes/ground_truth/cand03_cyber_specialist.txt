@@ -1,0 +1,4 @@
+Samira Patel
+samira.patel@example.com | +852 9345 6789
+B.Eng in Information Security
+SOC Security Analyst: Investigated security incidents in Splunk SIEM, inspected network packet captures in Wireshark, executed web pentesting aligned with OWASP Top 10, hardened Linux servers, and led Incident Response drills.

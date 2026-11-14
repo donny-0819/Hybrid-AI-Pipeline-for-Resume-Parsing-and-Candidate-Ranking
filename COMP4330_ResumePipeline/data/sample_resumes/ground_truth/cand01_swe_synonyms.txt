@@ -1,0 +1,4 @@
+Alex Wong
+alex.wong@example.com | +852 9123 4567
+B.Sc in Computer Science, Hong Kong Metropolitan University
+Senior Cloud Backend Developer at FinTech Labs: Built asynchronous RESTful APIs in Py and FastAPI, deployed containerized microservices via Docker and K8s on Amazon Web Services, managed Postgres databases, and built interactive UI views in TS and ReactJS with automated CICD.

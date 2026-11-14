@@ -1,0 +1,26 @@
+python_version: "3.11"
+ingestion:
+  digital_char_density_threshold: 50
+  ocr_dpi: 300
+  tesseract_oem: 3
+  tesseract_psm: 6
+  tesseract_lang: "eng"
+  opencv_presets:
+    grayscale: true
+    denoise_h: 10
+    deskew_enabled: true
+    deskew_max_angle_deg: 15.0
+    adaptive_binarization: true
+    adaptive_block_size: 31
+    adaptive_c: 10
+ner:
+  baseline_model: "en_core_web_sm"
+  upgraded_model: "en_core_web_trf"
+  sqlite_db_path: "data/candidates.db"
+matching:
+  sbert_model: "all-MiniLM-L6-v2"
+  semantic_weight: 0.70
+  skill_weight: 0.30
+evaluation:
+  top_k: 5
+  relevance_threshold_for_precision: 2

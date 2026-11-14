@@ -1,0 +1,4 @@
+ivan.ho@example.com | +852 9567 8901
+Ivan Ho
+Higher Diploma in Software Engineering
+Junior Software Developer Intern: Developed web frontends with JavaScript, React, HTML, CSS, and wrote Python backend scripts with Docker and Git.

@@ -1,0 +1,51 @@
+[
+  {
+    "jd_id": "JD_CYBER",
+    "title": "Cybersecurity Operations & Penetration Testing Analyst",
+    "domain": "Cybersecurity",
+    "mandatory_skills": [
+      "SIEM",
+      "Splunk",
+      "Wireshark",
+      "Penetration Testing",
+      "Incident Response",
+      "Network Security",
+      "OWASP",
+      "Linux"
+    ],
+    "description": "We are seeking a Cybersecurity Analyst to monitor enterprise security posture, investigate alerts in Splunk SIEM, analyze packet captures using Wireshark, and conduct web application penetration testing aligned with OWASP standards. Candidates must demonstrate strong Linux administration, network security hardening, vulnerability assessment, and incident response workflows."
+  },
+  {
+    "jd_id": "JD_SWE",
+    "title": "Full-Stack Cloud Software Engineer",
+    "domain": "Software Engineering",
+    "mandatory_skills": [
+      "Python",
+      "TypeScript",
+      "React",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "AWS"
+    ],
+    "description": "We are hiring a Full-Stack Software Engineer to design scalable cloud-native microservices using Python (FastAPI) and modern frontends in TypeScript and React. You will manage relational schemas in PostgreSQL, containerize workloads with Docker, orchestrate deployments on Kubernetes in AWS, and maintain automated CI/CD pipelines."
+  },
+  {
+    "jd_id": "JD_DATA",
+    "title": "Business Data & Machine Learning Analyst",
+    "domain": "Business Data Analysis",
+    "mandatory_skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Tableau",
+      "Power BI",
+      "Statistical Modeling",
+      "A/B Testing",
+      "ETL"
+    ],
+    "description": "We are looking for a Business Data Analyst to transform raw operational datasets into executive insights. Responsibilities include writing complex SQL queries, building automated ETL workflows in Python and Pandas, designing interactive KPI dashboards in Tableau and Power BI, and running A/B testing and statistical modeling experiments."
+  }
+]

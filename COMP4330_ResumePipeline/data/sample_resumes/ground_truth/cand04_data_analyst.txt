@@ -1,0 +1,4 @@
+Chloe Chan
+chloe.chan@example.com | +852 9456 7890
+BSc in Data Science
+Business Intelligence Analyst: Engineered automated ETL pipelines using Python, Pandas, and SQL. Built executive KPI dashboards in PowerBI and Tableau, and designed A/B Testing & Statistical Modeling studies.
